@@ -65,6 +65,7 @@ void GPService::connect(QString server, QString username, QString passwd)
     QStringList args;
     args << QCoreApplication::arguments().mid(1)
      << "--protocol=gp"
+     << "--no-dtls"
      << "-u" << username
      << "-C" << passwd
      << server;
